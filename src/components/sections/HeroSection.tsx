@@ -21,7 +21,7 @@ const HeroSection = () => {
               Get Started
             </Link>
           </div>
-          <div className="hidden md:block animate-fadeIn">
+          <div className="animate-fadeIn">
             <img
               src="https://illustrations.popsy.co/amber/digital-marketing.svg"
               alt="Hero Illustration"

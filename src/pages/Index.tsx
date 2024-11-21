@@ -3,9 +3,7 @@ import HeroSection from "../components/sections/HeroSection";
 import AgencySection from "../components/sections/AgencySection";
 import TestimonialsSection from "../components/sections/TestimonialsSection";
 import FooterSection from "../components/sections/FooterSection";
-
-// Add react-scroll for smooth scrolling
-<lov-add-dependency>react-scroll@latest</lov-add-dependency>
+import ContactSection from "../components/sections/ContactSection";
 
 const Index = () => {
   return (
@@ -14,7 +12,7 @@ const Index = () => {
       <HeroSection />
       
       {/* Services Section */}
-      <section className="py-16 bg-secondary">
+      <section id="services" className="py-16 bg-secondary">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
             We Provide The Best Services
@@ -101,6 +99,7 @@ const Index = () => {
       
       <AgencySection />
       <TestimonialsSection />
+      <ContactSection />
       
       {/* CTA Section */}
       <section className="bg-primary py-16">

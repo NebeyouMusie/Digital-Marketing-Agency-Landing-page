@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -37,7 +36,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-16">
+    <section id="testimonials" className="py-16 relative">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 animate-fadeIn">
           What Clients Say!
@@ -47,7 +46,7 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial) => (
                 <CarouselItem key={testimonial.id}>
-                  <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <div className="bg-white p-8 rounded-lg shadow-lg mx-4">
                     <div className="flex items-center mb-4">
                       <img
                         src={testimonial.image}
@@ -69,8 +68,14 @@ const TestimonialsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <div className="hidden md:block">
+              <CarouselPrevious className="absolute -left-12 top-1/2 transform -translate-y-1/2" />
+              <CarouselNext className="absolute -right-12 top-1/2 transform -translate-y-1/2" />
+            </div>
+            <div className="md:hidden flex justify-center gap-4 mt-4">
+              <CarouselPrevious className="position-static transform-none" />
+              <CarouselNext className="position-static transform-none" />
+            </div>
           </Carousel>
         </div>
       </div>
