@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Digital Marketing Agency Landing Page
 
 ## Project info
 
