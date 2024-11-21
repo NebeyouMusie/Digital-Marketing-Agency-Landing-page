@@ -36,8 +36,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-16 relative">
-      <div className="container mx-auto">
+    <section id="testimonials" className="py-16 relative overflow-hidden">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 animate-fadeIn">
           What Clients Say!
         </h2>
@@ -69,8 +69,8 @@ const TestimonialsSection = () => {
               ))}
             </CarouselContent>
             <div className="hidden md:block">
-              <CarouselPrevious className="absolute -left-12 top-1/2 transform -translate-y-1/2" />
-              <CarouselNext className="absolute -right-12 top-1/2 transform -translate-y-1/2" />
+              <CarouselPrevious className="absolute -left-4 lg:-left-12 top-1/2 transform -translate-y-1/2" />
+              <CarouselNext className="absolute -right-4 lg:-right-12 top-1/2 transform -translate-y-1/2" />
             </div>
             <div className="md:hidden flex justify-center gap-4 mt-4">
               <CarouselPrevious className="position-static transform-none" />

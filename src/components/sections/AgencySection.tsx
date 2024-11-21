@@ -16,7 +16,7 @@ const AgencySection = () => {
             <img
               src="https://illustrations.popsy.co/amber/data-analysis.svg"
               alt="Agency Illustration"
-              className="w-full h-auto"
+              className="w-full h-auto max-w-lg mx-auto"
             />
           </div>
         </div>

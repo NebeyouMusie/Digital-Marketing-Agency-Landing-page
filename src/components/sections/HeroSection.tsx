@@ -25,7 +25,7 @@ const HeroSection = () => {
             <img
               src="https://illustrations.popsy.co/amber/digital-marketing.svg"
               alt="Hero Illustration"
-              className="w-full h-auto"
+              className="w-full h-auto max-w-lg mx-auto"
             />
           </div>
         </div>
