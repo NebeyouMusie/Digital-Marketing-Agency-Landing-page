@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial) => (
                 <CarouselItem key={testimonial.id}>
-                  <div className="bg-white p-8 rounded-lg shadow-lg mx-4 h-[300px] flex flex-col">
+                  <div className="bg-white p-8 rounded-lg shadow-lg mx-4 h-[220px] flex flex-col">
                     <div className="flex items-center mb-4">
                       <img
                         src={testimonial.image}
@@ -69,8 +69,8 @@ const TestimonialsSection = () => {
               ))}
             </CarouselContent>
             <div className="hidden md:block">
-              <CarouselPrevious className="absolute -left-4 lg:-left-12 top-1/2 transform -translate-y-1/2" />
-              <CarouselNext className="absolute -right-4 lg:-right-12 top-1/2 transform -translate-y-1/2" />
+              <CarouselPrevious className="absolute -left-12 lg:-left-16 top-1/2 transform -translate-y-1/2" />
+              <CarouselNext className="absolute -right-12 lg:-right-16 top-1/2 transform -translate-y-1/2" />
             </div>
             <div className="md:hidden flex justify-center gap-4 mt-4">
               <CarouselPrevious className="position-static transform-none" />
