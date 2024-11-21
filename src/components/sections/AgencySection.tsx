@@ -14,9 +14,9 @@ const AgencySection = () => {
           </div>
           <div className="animate-fadeIn">
             <img
-              src="https://illustrations.popsy.co/amber/creative-team.svg"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
               alt="Agency Illustration"
-              className="w-full h-auto max-w-lg mx-auto"
+              className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
