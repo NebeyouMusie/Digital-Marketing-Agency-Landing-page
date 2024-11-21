@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
           <div className="animate-fadeIn">
             <img
-              src="https://illustrations.popsy.co/amber/digital-marketing.svg"
+              src="https://illustrations.popsy.co/white/product-launch.svg"
               alt="Hero Illustration"
               className="w-full h-auto max-w-lg mx-auto"
             />

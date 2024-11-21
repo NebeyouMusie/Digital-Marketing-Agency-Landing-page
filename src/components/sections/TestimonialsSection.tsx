@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
             <CarouselContent>
               {testimonials.map((testimonial) => (
                 <CarouselItem key={testimonial.id}>
-                  <div className="bg-white p-8 rounded-lg shadow-lg mx-4">
+                  <div className="bg-white p-8 rounded-lg shadow-lg mx-4 h-[300px] flex flex-col">
                     <div className="flex items-center mb-4">
                       <img
                         src={testimonial.image}
@@ -58,8 +58,8 @@ const TestimonialsSection = () => {
                         <p className="text-gray-600">{testimonial.role}</p>
                       </div>
                     </div>
-                    <p className="text-gray-600 mb-4">{testimonial.content}</p>
-                    <div className="flex text-yellow-400">
+                    <p className="text-gray-600 mb-4 flex-grow">{testimonial.content}</p>
+                    <div className="flex text-yellow-400 mt-auto">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} size={20} fill="currentColor" />
                       ))}
